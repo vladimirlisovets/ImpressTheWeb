@@ -2,11 +2,7 @@
 Impress.js adaptation as a web page
 
 
-# The How To ?
-
-
-<strong>Basic DOM</strong>
-
+# Basic DOM
 <code>
     <!DOCTYPE html>
 
@@ -19,7 +15,8 @@ Impress.js adaptation as a web page
 		</head>
 
 		<body>
-		
+
+
 	        <div
 	        id="impress"
 	        class="presentation"
@@ -45,18 +42,18 @@ Impress.js adaptation as a web page
 
 		</body>
 
-	</html>
-	</code>
+	</html> 
+</code>
 
 
-<strong>Styling</strong>
+# Basic Styling
 
 <code>
 width: 100vw;
 height: 100vh;
 </code>
 
-<strong>Manipulating Navigation Between Steps</strong>
+# Manipulating Navigation Between Steps
 
 <code>
 
