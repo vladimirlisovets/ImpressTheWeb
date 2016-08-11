@@ -14,8 +14,8 @@ height: 100vh;
 
 
 # Manipulating Navigation Between Steps
-<code>
 
+<code>
 	impress().init();
 
 	app = angular.module('presentation', []);
