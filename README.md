@@ -20,7 +20,6 @@ height: 100vh;
 
 <code>
 	impress().init();
-
 	app = angular.module('presentation', []);
 
 	app.directive("scroll", function ($window) {
