@@ -14,7 +14,6 @@ height: 100vh;
 
 
 # Manipulating Navigation Between Steps
-
 <code>
 
 	impress().init();
