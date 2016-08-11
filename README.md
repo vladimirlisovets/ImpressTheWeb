@@ -3,34 +3,8 @@ Impress.js adaptation as a web page
 
 
 # Basic DOM
-<code>
-<!DOCTYPE html>
-<html ng-app="presentation" scroll>
-<head>
-<!-- <head> content here -->
-</head>
-<body>
-<div
-id="impress"
-class="presentation"
-data-min-scale="1"
-data-max-scale="1"
-data-scale="1">
-<div
-id="first"
-class="step"
-data-x="0"
-data-y="0"
-data-z="0"
-data-rotate-x="0"
-data-rotate-y="0"
-data-rotate-z="0">
-<!-- Step Content -->
-</div>
-</div>
-</body>
-</html>
-</code>
+
+https://gist.github.com/vladimirlisovets/b64310e353dd439317c8f0fb0d8fe895
 
 # Basic Styling
 
