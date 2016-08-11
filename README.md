@@ -1,5 +1,5 @@
 # ImpressTheWeb
-Impress.js adaptation as a web page
+Impress.js adaptation as a web page (https://github.com/impress/impress.js/)
 
 
 # Basic DOM
