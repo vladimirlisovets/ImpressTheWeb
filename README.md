@@ -19,51 +19,51 @@ height: 100vh;
 # Manipulating Navigation Between Steps
 
 <code>
-impress().init();
+	impress().init();
 
-app = angular.module('presentation', []);
+	app = angular.module('presentation', []);
 
-app.directive("scroll", function ($window) {
+	app.directive("scroll", function ($window) {
 
-return function(scope, element, attrs) {
+		return function(scope, element, attrs) {
 
-	// Adding a Event Listener on `impress:stepenter` 
+			// Adding a Event Listener on `impress:stepenter` 
 
-	/* 
-
-
-		other impress.js events:
-		impress:init
-		impress:stepenter
-		impress:stepleave
+			/* 
 
 
-	*/
+				other impress.js events:
+				impress:init
+				impress:stepenter
+				impress:stepleave
 
-	window.addEventListener('impress:stepenter', function() {
 
-		// one() will allow user to scroll ahead only after loading next step
+			*/
 
-		angular.element($window).one('mousewheel', function(e) {
-			
-			// Waiting for the transition effect to take place before letting scroll ahead
+			window.addEventListener('impress:stepenter', function() {
 
-			setTimeout(function() {
+				// one() will allow user to scroll ahead only after loading next step
 
-					// Using mousewheel event to understand if scrolling UP or DOWN 
+				angular.element($window).one('mousewheel', function(e) {
+					
+					// Waiting for the transition effect to take place before letting scroll ahead
 
-					e.originalEvent.wheelDelta < 0 ? impress().next() : impress().prev();		
+					setTimeout(function() {
 
-			}, 300);
+							// Using mousewheel event to understand if scrolling UP or DOWN invoke impress:next() and impress:prev() 
 
-			// Look for: transition: all 250ms; ease; in the .scss 
-			// Add a slightly larger interval so user don't scroll by mistake without realizing there is a step
+							e.originalEvent.wheelDelta < 0 ? impress().next() : impress().prev();		
 
-		});
+					}, 300);
+
+					// Look for: transition: all 250ms; ease; in the .scss 
+					// Add a slightly larger interval so user don't scroll by mistake without realizing there is a step
+
+				});
+
+			});
+
+		};
 
 	});
-
-};
-
-});
 </code>
