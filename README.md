@@ -9,8 +9,10 @@ https://gist.github.com/vladimirlisovets/b64310e353dd439317c8f0fb0d8fe895
 # Basic Styling
 
 <code>
+.step {
 width: 100vw;
 height: 100vh;
+}
 </code>
 
 
