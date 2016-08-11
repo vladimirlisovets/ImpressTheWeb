@@ -19,7 +19,9 @@ height: 100vh;
 # Manipulating Navigation Between Steps
 
 <code>
+
 	impress().init();
+	
 	app = angular.module('presentation', []);
 
 	app.directive("scroll", function ($window) {
