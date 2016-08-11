@@ -3,7 +3,7 @@ Impress.js adaptation as a web page
 
 
 # Basic DOM
-
+<code>
 
 # Basic Styling
 
